@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    max-width: 100%;
+    height: 88px;
+    background-color: black;
+}
+.golova{
+    
+    text-align: center;
+
+}
+
+.golova a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
