@@ -1,26 +1,63 @@
 *{
     margin: 0;
-    padding: 0;
     list-style: none;
     text-decoration: none;
 }
 
-header{
-    max-width: 100%;
+header {
+    background-color: #111;
     height: 88px;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+span{
+    color: white;
 }
-.golova{
-    
-    text-align: center;
 
-}
-
-.golova a {
-    font-family: Arial, Helvetica, sans-serif;
+  .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 60px;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .nav-links a {
     color: white;
     margin: 0 15px;
-    margin-top: 10px;
+    transform: translateX(-30px);
+    font-weight: 600;
     text-decoration: none;
+  }
+  
+  .whatsapp-button {
+    background-color: #1ebea5;
+    color: white;
+    display: flex;
+    margin-right: 60px;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 20px;
     font-weight: bold;
+  }
+  
+  .whatsapp-button img {
+    height: 20px;
+    margin-right: 8px;
   }
