@@ -311,6 +311,58 @@ h3{
 }
 
 
+.logo-carousel-container {
+  overflow: hidden; /* Приховує елементи, що виходять за межі контейнера */
+  padding: 10px;
+  background-color: white; /* Світлий фон */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative; /* Для абсолютно позиціонованих кнопок */
+}
+
+.logo-carousel {
+  display: flex; /* Розташовує логотипи в один ряд */
+  transition: transform 0.5s ease-in-out; /* Анімація прокрутки */
+}
+
+.logo-item {
+  flex: 0 0 auto; /* Не стискатися і не розширюватися, автоматична ширина */
+  margin-right: 20px; /* Відступ між логотипами */
+  display: flex;
+  align-items: center; /* Вертикальне центрування логотипів */
+}
+
+.logo-item img {
+  max-height: 50px; /* Максимальна висота логотипа */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-button:hover {
+  opacity: 1;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+
 
 .testimonials-section {
   padding: 70px;
