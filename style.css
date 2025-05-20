@@ -311,57 +311,225 @@ h3{
 }
 
 
+.why-buycar-container {
+    background: linear-gradient(90deg, #4a148c, #2e3192); /* Більш насичений фіолетовий до темно-синього */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative; /* Робимо контейнер відносно позиціонованим для коліс */
+    overflow: hidden; /* Щоб обрізати колеса, якщо вони виходять за межі */
+}
+
+.why-buycar-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.why-buycar-advantages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Для адаптивності на малих екранах */
+    max-width: 960px; /* Максимальна ширина блоку з перевагами */
+    margin: 0 auto;
+    position: relative; /* Щоб переваги були над колесами, якщо колеса мають z-index */
+    z-index: 2; /* Вищий z-index для контенту, щоб він був над колесами */
+}
+
+.advantage-item {
+    flex: 1 0 300px; /* Мінімальна ширина 300px, рівномірний розподіл */
+    padding: 20px;
+    margin-bottom: 20px; /* Відступ між елементами знизу на малих екранах */
+}
+
+.advantage-icon {
+    font-size: 3em; /* Розмір іконок */
+    margin-bottom: 15px;
+}
+
+.advantage-text {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Стилі для зображень коліс */
+.wheel {
+    position: absolute; /* Абсолютне позиціонування відносно .why-buycar-container */
+    width: 120px; /* Розмір колеса, можна налаштувати */
+    height: auto;
+    opacity: 0.1; /* Напівпрозорість, як на прикладі */
+    z-index: 1; /* Нижчий z-index, щоб вони були за контентом */
+}
+
+.wheel-top-left {
+    top: -60px; /* Винос за верхній край */
+    left: -60px; /* Винос за лівий край */
+    transform: rotate(-15deg); /* Невеликий нахил */
+}
+
+.wheel-bottom-right {
+    bottom: -60px; /* Винос за нижній край */
+    right: -60px; /* Винос за правий край */
+    transform: rotate(15deg); /* Невеликий нахил в іншу сторону */
+}
+
+
+/* Адаптивний дизайн для менших екранів */
+@media (max-width: 768px) {
+    .advantage-item {
+        flex-basis: calc(50% - 20px); /* Два елементи в ряд на середніх екранах */
+    }
+    .wheel {
+        width: 80px; /* Зменшити розмір коліс на менших екранах */
+    }
+    .wheel-top-left {
+        top: -40px;
+        left: -40px;
+    }
+    .wheel-bottom-right {
+        bottom: -40px;
+        right: -40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantage-item {
+        flex-basis: 100%; /* Один елемент в ряд на малих екранах */
+    }
+    .wheel {
+        display: none; /* Можна приховати колеса на дуже малих екранах */
+    }
+}
+
+
+.latest-cars-container {
+    border: 1px dashed #8ab4f8;
+    border-radius: 5px;
+    padding: 60px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.latest-cars-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.latest-cars-title {
+    font-size: 1.5em;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.latest-cars-link {
+    color: #1a73e8;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.latest-cars-link svg {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.latest-cars-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.latest-cars-left {
+    flex: 1;
+}
+
+.latest-cars-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-cars-list li {
+    padding: 10px 0;
+    color: #333;
+    cursor: pointer;
+}
+
+.latest-cars-list li.active {
+    color: white;
+    background-color: #1a73e8;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+.latest-cars-right {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-cars-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+
 .logo-carousel-container {
-  overflow: hidden; /* Приховує елементи, що виходять за межі контейнера */
-  padding: 10px;
-  background-color: white; /* Світлий фон */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  position: relative; /* Для абсолютно позиціонованих кнопок */
+    overflow: hidden; /* Приховує елементи, що виходять за межі контейнера */
+    padding: 20px; /* Збільшений внутрішній відступ */
+    background-color: white; /* Світлий фон */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative; /* Для абсолютно позиціонованих кнопок */
 }
 
 .logo-carousel {
-  display: flex; /* Розташовує логотипи в один ряд */
-  transition: transform 0.5s ease-in-out; /* Анімація прокрутки */
+    display: flex; /* Розташовує логотипи в один ряд */
+    transition: transform 0.5s ease-in-out; /* Анімація прокрутки */
 }
 
 .logo-item {
-  flex: 0 0 auto; /* Не стискатися і не розширюватися, автоматична ширина */
-  margin-right: 20px; /* Відступ між логотипами */
-  display: flex;
-  align-items: center; /* Вертикальне центрування логотипів */
+    flex: 0 0 auto; /* Не стискатися і не розширюватися, автоматична ширина */
+    margin-right: 30px; /* Збільшений відступ між логотипами */
+    display: flex;
+    align-items: center; /* Вертикальне центрування логотипів */
 }
 
 .logo-item img {
-  max-height: 50px; /* Максимальна висота логотипа */
+    max-height: 80px; /* Збільшена максимальна висота логотипа */
 }
 
 .carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px; /* Збільшений розмір кнопок */
+    font-size: 1.2em; /* Збільшений розмір шрифту кнопок */
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
 .carousel-button:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .prev-button {
-  left: 10px;
+    left: 20px; /* Збільшена відстань від лівого краю */
 }
 
 .next-button {
-  right: 10px;
+    right: 20px; /* Збільшена відстань від правого краю */
 }
-
 
 
 .testimonials-section {
