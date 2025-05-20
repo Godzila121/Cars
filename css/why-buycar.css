@@ -1,0 +1,87 @@
+.why-buycar-container {
+    background: linear-gradient(90deg, #4a148c, #2e3192);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-buycar-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.why-buycar-advantages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.advantage-item {
+    flex: 1 0 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.advantage-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.advantage-text {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.wheel {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.wheel-top-left {
+    top: -60px;
+    left: -60px;
+    transform: rotate(-15deg); 
+}
+
+.wheel-bottom-right {
+    bottom: -60px;
+    right: -60px;
+    transform: rotate(15deg);
+}
+
+
+@media (max-width: 768px) {
+    .advantage-item {
+        flex-basis: calc(50% - 20px);
+    }
+    .wheel {
+        width: 80px;
+    }
+    .wheel-top-left {
+        top: -40px;
+        left: -40px;
+    }
+    .wheel-bottom-right {
+        bottom: -40px;
+        right: -40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantage-item {
+        flex-basis: 100%;
+    }
+    .wheel {
+        display: none;
+    }
+}

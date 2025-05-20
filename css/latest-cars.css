@@ -1,0 +1,75 @@
+.latest-cars-container {
+    border: 1px dashed #8ab4f8;
+    border-radius: 5px;
+    padding: 60px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.latest-cars-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.latest-cars-title {
+    font-size: 1.5em;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.latest-cars-link {
+    color: #1a73e8;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.latest-cars-link svg {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.latest-cars-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.latest-cars-left {
+    flex: 1;
+}
+
+.latest-cars-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-cars-list li {
+    padding: 10px 0;
+    color: #333;
+    cursor: pointer;
+}
+
+.latest-cars-list li.active {
+    color: white;
+    background-color: #1a73e8;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+.latest-cars-right {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-cars-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+

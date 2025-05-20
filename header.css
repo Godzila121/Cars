@@ -1,3 +1,11 @@
+header {
+  background-color: #111;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
 span {
   color: white;
 }
@@ -59,20 +67,3 @@ span {
 .nav-links a:hover::after {
   width: 100%;
 }
-
-.whatsapp-button {
-  background-color: #1ebea5;
-  color: white;
-  display: flex;
-  margin-right: 50px;
-  align-items: center;
-  padding: 8px 13px;
-  border-radius: 22px;
-  font-weight: bold;
-}
-
-.whatsapp-button img {
-  height: 20px;
-  margin-right: 8px;
-}
-

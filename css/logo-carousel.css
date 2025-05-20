@@ -1,0 +1,51 @@
+.logo-carousel-container {
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.logo-carousel {
+    display: flex; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo-item {
+    flex: 0 0 auto; 
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-item img {
+    max-height: 80px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px; 
+    font-size: 1.2em; 
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-button:hover {
+    opacity: 1;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px; 
+}

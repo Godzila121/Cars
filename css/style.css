@@ -1,0 +1,604 @@
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #111;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+span {
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  
+}
+
+.nav-links a {
+  position: relative;
+  color: white;
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.whatsapp-button {
+  background-color: #1ebea5;
+  color: white;
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+  padding: 8px 13px;
+  border-radius: 22px;
+  font-weight: bold;
+}
+
+.whatsapp-button img {
+  height: 20px;
+  margin-right: 8px;
+}
+
+
+
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+h3{
+  color: #666665;
+}
+.footer-left p {
+  margin-top: 15px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-logo {
+  color: #666665;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer-contact {
+  margin-top: 20px;
+}
+
+.footer-address,
+.footer-email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-address img,
+.footer-email img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+  vertical-align: middle;
+}
+
+.footer-middle {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-social {
+  display: flex;
+  
+  gap: 10px;
+}
+
+.footer-social a {
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 43px;
+  height: 40px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.footer-social img:hover {
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+
+
+.main-banner{
+ background-image: url("foto/Faru.jpeg");max-width: 100%;
+  padding: 20px;
+}
+
+.main-banner {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.banner-text {
+  flex-grow: 1;
+  margin-right: 20px;
+  max-width: 920px;
+  margin-left: 160px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-text p {
+  font-size: 1.4em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.banner-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-right: 120px;
+}
+
+.banner-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .main-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-text {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.why-buycar-container {
+    background: linear-gradient(90deg, #4a148c, #2e3192);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-buycar-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.why-buycar-advantages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.advantage-item {
+    flex: 1 0 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.advantage-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.advantage-text {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.wheel {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.wheel-top-left {
+    top: -60px;
+    left: -60px;
+    transform: rotate(-15deg); 
+}
+
+.wheel-bottom-right {
+    bottom: -60px;
+    right: -60px;
+    transform: rotate(15deg);
+}
+
+
+@media (max-width: 768px) {
+    .advantage-item {
+        flex-basis: calc(50% - 20px);
+    }
+    .wheel {
+        width: 80px;
+    }
+    .wheel-top-left {
+        top: -40px;
+        left: -40px;
+    }
+    .wheel-bottom-right {
+        bottom: -40px;
+        right: -40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantage-item {
+        flex-basis: 100%;
+    }
+    .wheel {
+        display: none;
+    }
+}
+
+
+
+
+.latest-cars-container {
+    border: 1px dashed #8ab4f8;
+    border-radius: 5px;
+    padding: 60px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.latest-cars-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.latest-cars-title {
+    font-size: 1.5em;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+.latest-cars-link {
+    color: #1a73e8;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.latest-cars-link svg {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.latest-cars-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.latest-cars-left {
+    flex: 1;
+}
+
+.latest-cars-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-cars-list li {
+    padding: 10px 0;
+    color: #333;
+    cursor: pointer;
+}
+
+.latest-cars-list li.active {
+    color: white;
+    background-color: #1a73e8;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+.latest-cars-right {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-cars-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+
+.logo-carousel-container {
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+
+.logo-carousel {
+    display: flex; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo-item {
+    flex: 0 0 auto; 
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-item img {
+    max-height: 80px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px; 
+    font-size: 1.2em; 
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-button:hover {
+    opacity: 1;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px; 
+}
+
+
+
+.testimonials-section {
+  padding: 70px;
+  background-color: #f0f8ff;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: left;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.testimonial-author{
+  text-align: left;
+
+  width: 100%;
+}
+
+.testimonial-author .author-name {
+  font-size: 22px;
+  color: #ddd;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-grid {
+      grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,55 @@
+.main-banner{
+ background-image: url("../foto/Faru.jpeg");
+ max-width: 100%;
+  padding: 20px;
+}
+
+.main-banner {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.banner-text {
+  flex-grow: 1;
+  margin-right: 20px;
+  max-width: 920px;
+  margin-left: 160px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-text p {
+  font-size: 1.4em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.banner-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-right: 120px;
+}
+
+.banner-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .main-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-text {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
